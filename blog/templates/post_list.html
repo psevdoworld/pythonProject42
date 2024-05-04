@@ -2,6 +2,9 @@ potato
 
 {% for post in data %}
 <br>
+{% if post.picture %}
+<img src="{{post.picture.url}}">
+{% endif %}
  Автор: {{post.author.username}}
 <br>
  Загаловок: {{post.title}}
