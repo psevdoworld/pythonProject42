@@ -1,0 +1,11 @@
+potato
+
+{% for post in data %}
+<br>
+ Автор: {{post.author.username}}
+<br>
+ Загаловок: {{post.title}}
+ <br>
+ Текст: {{post.text}}
+ <br>
+{% endfor %}
